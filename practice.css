@@ -1,0 +1,98 @@
+body {
+	font-family: 'Edu NSW ACT Foundation', cursive;
+	background-color: aquamarine;
+}
+#service-image {
+	height: 400px;
+	width: 70vw;
+	background: radial-gradient(circle, red 20%, blue 40%, green 55%);
+	border: 5px solid rgb(28, 28, 79);
+	background-size: cover;
+	font-family: 'Edu QLD Beginner', cursive;
+}
+img {
+	height: 270px;
+	width: 40vw;
+	background-size: cover;
+	float: right;
+	border: 7px solid black;	
+}
+.containier{
+	background-color: rgb(254, 255, 255);
+	height: 300px;
+	margin: 10px;
+	
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	justify-content: center;
+	align-content: center;
+}
+
+.container-item{
+	background: rgb(36, 130, 39);
+	color: white;
+	font-size: 25px;
+	text-align: center;
+	width: 70px;
+	line-height: 50px;
+	margin: 10px; 
+	font-family: sans-serif;
+}
+.grid-container {
+	background-color: rgb(250,250,250);
+	margin: 10px;
+	height: 500px;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto;
+}
+.grid-item {
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  width: 70px;
+  line-height: 40px;
+  margin: 10px; 
+}
+.submit-button {
+	margin: 20px 10px;
+	padding: 10px 15px;
+	border: none;
+	text-decoration: none;
+	font-family: "Lato", sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	color: white;
+	background: rgb(89, 150, 255);
+	transform: matrix(1, 0.45, 0.45, 1, 100, 50);
+	-webkit-transition: all 2s ease 1s;
+	-moz-transition: all 2s ease 1s;
+	-o-transition: all 2s ease 1s;
+}
+.submit-button:hover {
+	background: rgb(147, 187, 255);
+	padding: 20px 30px;
+}
+
+#about-me{
+/*	animation-name: red-to-black;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse; */
+	animation: red-to-black 4s linear -2s infinite alternate-reverse;
+}
+
+@keyframes red-to-black {
+	0%{
+		background: red;transform: translate(0px,0px);
+	}
+	50%{
+		background: yellow;transform: translate(10px,10px);
+	}
+	100%{
+		background: black;transform: translate(0px,0px);
+	}
+}
